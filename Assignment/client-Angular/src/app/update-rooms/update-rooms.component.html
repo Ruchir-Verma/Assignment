@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+
+</style>
+</head>
+<body>
+
+<div>
+
+  <form action="">
+  <label>Capacity</label><br>
+  <input type="number"  id="guests"[(ngModel)]="guests" name="guests"><br>
+  <label>Room Type</label><br>
+  <select name="cars" id="roomType"[(ngModel)]="roomType"  name="roomType" id="cars">
+    <option value="Deluxe">Deluxe</option>
+    <option value="Standard">Standard</option>
+    <option value="Luxury">Luxury</option>
+
+  </select>
+  <label>Date</label><br>
+  <input type="date"   id="checkIn" [(ngModel)]="checkIn"name="checkIn"><br>
+
+
+
+  <input type = "submit"(click)="submit()" >
+
+
+</form>
+
+
+  <button class="button1"(click)="logout()">LOGOUT</button>
+  </div>
+</body>
+</html>

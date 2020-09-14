@@ -1,0 +1,52 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+
+</style>
+</head>
+<body>
+<br>
+<br><br>
+<br><br>
+<br>
+ <div > <form>
+
+   <label><mark>ENTER CHECKIN DATE: </mark></label>
+  <input type="text"  id="checkIn" [(ngModel)]="checkIn"  name="checkIn"placeholder="YYYY-MM-DD"><br>
+  <input type = "submit" value="View Reports" (click)="submit()">
+
+</form>
+ </div>
+
+
+
+<table id="customers">
+  <tr>
+    <th>Customer</th>
+    <th>RoomType</th>
+    <th>Check-In</th>
+     <th>Check-Out</th>
+     <th>Guests</th>
+  </tr>
+  <tr *ngFor="let user of x">
+    <td>{{user[0]}}</td>
+    <td>{{user[1]}}</td>
+    <td>{{user[2]}}</td>
+    <td>{{user[3]}}</td>
+    <td>{{user[4]}}</td>
+  </tr>
+
+</table>
+
+
+
+  <button class="button1" (click) ="logout()">LOGOUT</button>
+
+
+
+</body>
+  </html>

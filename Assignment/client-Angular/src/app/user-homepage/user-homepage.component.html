@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+
+</style>
+</head>
+<body>
+
+<div>
+<form action="">
+  <label>Visitor Name</label><br>
+  <input type="text" [(ngModel)]="Customer"  id="visitor" name="visitor"><br>
+  <label>Room Type</label><br>
+
+  <select name="cars" id="roomType"[(ngModel)]="roomType"  name="roomType" id="cars">
+    <option value="Deluxe">Deluxe</option>
+    <option value="Standard">Standard</option>
+    <option value="Luxury">Luxury</option>
+
+  </select>
+
+
+
+
+
+  <label>Check In</label><br>
+  <input type="date"   id="checkIn" [(ngModel)]="checkIn" name="checkIn"><br>
+  <label>Check Out</label><br>
+  <input type="date"   id="checkOut" [(ngModel)]="checkOut" name="checkOut" ><br>
+  <label>Guests</label><br>
+  <input type="number" id="guests"  [(ngModel)]="guests" name="guests" max="3"><br>
+
+
+  <button class = "button"(click)="submit()">Check Availability </button>
+
+  <button  class = "button" (click) = "book()"> Book Room </button>
+</form>
+  <button class = "button1"(click)="logout()">LOGOUT</button>
+</div>
+</body>
+</html>
